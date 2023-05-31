@@ -1,4 +1,10 @@
 <h2>Lista de alunos</h2>
+<form>
+  <p>Nome: <input type="text" name="name" [(ngModel)]="aluno.nome" /></p>
+  <p>Idade: <input type="text" name="age" [(ngModel)]="aluno.idade" /></p>
+  <button type="button" (click)="Cadastrar()">Cadastrar</button>
+</form>
+<hr />
 <table>
   <tr>
     <th>ID</th>
@@ -9,5 +15,9 @@
     <th>{{ x.id }}</th>
     <th>{{ x.nome }}</th>
     <th>{{ x.idade }}</th>
+    <td>
+      <button (click)="Atualizar(x.id)">Atualizar</button>
+      <button (click)="Excluir(x.id)">Excluir</button>
+    </td>
   </tr>
 </table>

@@ -11,9 +11,9 @@
       "idade": 65
     },
     {
-      "id": 3,
       "nome": "Celio Lins",
-      "idade": 19
+      "idade": "19",
+      "id": 3
     },
     {
       "id": 4,

@@ -28,4 +28,40 @@ export class AlunosComponent implements OnInit {
       }
     );
   }
+  Cadastrar() {
+    console.log(this.aluno);
+    this.alunoService.cadastrarAlunos(this.aluno).subscribe(
+      (a) => {
+        this.aluno = new AlunoModel();
+        this.Listar();
+      },
+      (err) => {
+        console.log('Erro ao cadastrar alunos', err);
+      }
+    );
+  }
+  Atualizar(id: number) {
+    console.log(this.aluno);
+    this.alunoService.atualizar(id, this.aluno).subscribe(
+      (a) => {
+        this.aluno = new AlunoModel();
+        this.Listar();
+      },
+      (err) => {
+        console.log('Erro ao cadastrar alunos', err);
+      }
+    );
+  }
+  Excluir(id: number) {
+    console.log(this.aluno);
+    this.alunoService.excluir(id).subscribe(
+      (a) => {
+        this.aluno = new AlunoModel();
+        this.Listar();
+      },
+      (err) => {
+        console.log('Erro ao excluir alunos', err);
+      }
+    );
+  }
 }
