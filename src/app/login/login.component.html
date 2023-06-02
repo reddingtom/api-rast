@@ -1,5 +1,7 @@
+<div class="content">
 <h2>Tela de Login - Adminstrativa</h2>
-<p>Login: <input type="text"></p>
-<p>Senha: <input type="text"></p>
-<br>
-<button>Entrar</button>
+<p>Login: <input type="email" [(ngModel)]="usuarios.login" /></p>
+<p>Senha: <input type="password" [(ngModel)]="usuarios.senha"/></p>
+<br />
+<button (click)="fazerlogin()">Entrar</button>
+</div>

@@ -10,9 +10,10 @@ import { FormsModule } from '@angular/forms';
 import { AlunosComponent } from './alunos/alunos.component';
 import { LoginComponent } from './login/login.component';
 import { PainelComponent } from './painel/painel.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
-  declarations: [AppComponent, AlunosComponent, LoginComponent, PainelComponent],
+  declarations: [AppComponent, AlunosComponent, LoginComponent, PainelComponent, HomeComponent],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [HttpClientModule, ServicosService],
   bootstrap: [AppComponent],
