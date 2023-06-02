@@ -8,9 +8,11 @@ import { ServicosService } from './service/servicos.service';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { AlunosComponent } from './alunos/alunos.component';
+import { LoginComponent } from './login/login.component';
+import { PainelComponent } from './painel/painel.component';
 
 @NgModule({
-  declarations: [AppComponent, AlunosComponent],
+  declarations: [AppComponent, AlunosComponent, LoginComponent, PainelComponent],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [HttpClientModule, ServicosService],
   bootstrap: [AppComponent],
